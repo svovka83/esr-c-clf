@@ -1,0 +1,10 @@
+@use "../../settings/variables.scss" as *;
+
+.slider {
+	padding-top: 80px;
+	padding-bottom: 80px;
+	&__title {
+		@include font(700, 34px, $primary_color);
+		margin-bottom: 24px;
+	}
+}

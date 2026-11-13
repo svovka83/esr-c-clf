@@ -8,8 +8,10 @@
 
 // modules
 @use "./modules/header.scss";
+@use "./modules/footer.scss";
 
 // main-page
 @use "./pages/main/banner.scss";
 @use "./pages/main/info.scss";
 @use "./pages/main/description.scss";
+@use "./pages/main/slider.scss";

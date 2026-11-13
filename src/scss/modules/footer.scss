@@ -1,0 +1,7 @@
+@use "../settings/variables.scss" as *;
+
+.footer {
+	height: 200px;
+	border-top: 2px solid $secondary_color;
+	background-color: $gray_color;
+}
