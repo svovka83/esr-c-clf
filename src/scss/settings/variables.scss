@@ -1,11 +1,12 @@
 $container-width: 1200px;
 $container-padding: 15px;
 
-$primary_text: #000000;
-$secondary_text: #71edcc;
-$white_text: #ffffff;
+$primary_color: #000000;
+$secondary_color: #71edcc;
+$white_color: #ffffff;
 
-$primary_bg: #ffffff;
+$eclipse: rgba(42, 42, 42, 0.5);
+$shadow: 12px 12px 36px rgb(83, 83, 83, 0.7);
 
 @mixin font($weight, $size, $color) {
 	font-weight: $weight;

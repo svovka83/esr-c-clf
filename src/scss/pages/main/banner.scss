@@ -6,9 +6,9 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: rgba(42, 42, 42, 0.5);
+	background-color: $eclipse;
 	&__title {
-		@include font(900, 82px, $secondary_text);
+		@include font(900, 82px, $secondary_color);
 		text-transform: uppercase;
 		text-align: center;
 		padding-inline: 10px;
@@ -26,16 +26,16 @@
 @media (max-width: 1024px) {
 	.banner {
 		&__title {
-			@include font(900, 70px, $secondary_text);
+			@include font(900, 70px, $secondary_color);
 		}
 	}
 }
 
 @media (max-width: 768px) {
 	.banner {
-		height: calc(100vh - 68px);
+		height: calc(100vh - 70px);
 		&__title {
-			@include font(900, 58px, $secondary_text);
+			@include font(900, 58px, $secondary_color);
 		}
 	}
 }
@@ -43,7 +43,7 @@
 @media (max-width: 450px) {
 	.banner {
 		&__title {
-			@include font(900, 44px, $secondary_text);
+			@include font(900, 44px, $secondary_color);
 		}
 	}
 }

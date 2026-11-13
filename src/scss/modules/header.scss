@@ -5,7 +5,8 @@
 	top: 0;
 	padding-top: 16px;
 	padding-bottom: 16px;
-	background-color: $primary_bg;
+	border-bottom: 2px solid $secondary_color;
+	background-color: $white_color;
 	z-index: 1000;
 	&__inner {
 		display: flex;
@@ -23,7 +24,7 @@
 		column-gap: 40px;
 	}
 	&__item {
-		@include font(500, 24px, #000);
+		@include font(500, 24px, $primary_color);
 	}
 	&__link {
 	}
