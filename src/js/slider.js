@@ -12,8 +12,8 @@ export async function initSlider() {
 		spaceBetween: 30,
 		speed: 700,
 
-		// direction: "vertical",
-		// loop: true,
+		loop: true,
+
 		// pagination: {
 		// 	el: ".swiper-pagination",
 		// },
