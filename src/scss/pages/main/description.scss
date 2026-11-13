@@ -1,0 +1,77 @@
+@use "../../settings/variables.scss" as *;
+
+.description {
+	padding-top: 80px;
+	padding-bottom: 80px;
+	background-color: $gray_color;
+	&__inner {
+	}
+	&__title {
+		@include font(700, 34px, $primary_color);
+		margin-bottom: 24px;
+	}
+	&__subtitle {
+		@include font(700, 28px, $primary_color);
+		margin-bottom: 24px;
+	}
+	&__text {
+		@include font(500, 20px, $primary_color);
+		margin-bottom: 24px;
+		&_bold {
+			@include font(700, 20px, $primary_color);
+			margin-bottom: 16px;
+		}
+	}
+	&__list {
+		padding-left: 24px;
+		margin-bottom: 24px;
+	}
+	&__item {
+		@include font(500, 20px, $primary_color);
+		margin-bottom: 12px;
+	}
+	&__link {
+		@include font(500, 24px, $pink_color);
+		text-decoration: underline;
+		margin-bottom: 12px;
+	}
+}
+
+@media (max-width: 768px) {
+	.description {
+		padding-top: 80px;
+		padding-bottom: 80px;
+		background-color: $gray_color;
+		&__inner {
+		}
+		&__title {
+			@include font(700, 30px, $primary_color);
+			margin-bottom: 24px;
+		}
+		&__subtitle {
+			@include font(700, 24px, $primary_color);
+			margin-bottom: 24px;
+		}
+		&__text {
+			@include font(500, 18px, $primary_color);
+			margin-bottom: 24px;
+			&_bold {
+				@include font(700, 18px, $primary_color);
+				margin-bottom: 16px;
+			}
+		}
+		&__list {
+			padding-left: 24px;
+			margin-bottom: 24px;
+		}
+		&__item {
+			@include font(500, 18px, $primary_color);
+			margin-bottom: 12px;
+		}
+		&__link {
+			@include font(500, 20px, $pink_color);
+			text-decoration: underline;
+			margin-bottom: 12px;
+		}
+	}
+}
