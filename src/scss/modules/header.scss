@@ -1,0 +1,33 @@
+@use "../settings/variables.scss" as *;
+
+.header {
+	position: sticky;
+	top: 0;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	background-color: $primary_bg;
+	z-index: 1000;
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+.logo {
+}
+
+.menu {
+	&__list {
+		display: flex;
+		column-gap: 40px;
+	}
+	&__item {
+		@include font(500, 24px, #000);
+	}
+	&__link {
+	}
+}
+
+.login {
+}

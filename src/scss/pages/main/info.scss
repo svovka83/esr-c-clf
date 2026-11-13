@@ -1,0 +1,20 @@
+@use "../../settings/variables.scss" as *;
+
+.info {
+	display: flex;
+	justify-content: space-between;
+	column-gap: 20px;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	&__img {
+		width: 550px;
+	}
+	&__content {
+	}
+	&__title {
+	}
+	&__price {
+	}
+	&__tel {
+	}
+}

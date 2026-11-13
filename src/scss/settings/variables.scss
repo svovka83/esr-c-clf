@@ -1,0 +1,14 @@
+$container-width: 1200px;
+$container-padding: 15px;
+
+$primary_text: #000000;
+$secondary_text: #71edcc;
+$white_text: #ffffff;
+
+$primary_bg: #ffffff;
+
+@mixin font($weight, $size, $color) {
+	font-weight: $weight;
+	font-size: $size;
+	color: $color;
+}
