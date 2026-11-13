@@ -7,6 +7,11 @@ import "swiper/css/navigation";
 export async function initSlider() {
 	const swiper = new Swiper(".swiper", {
 		modules: [Navigation],
+
+		slidesPerView: 1,
+		spaceBetween: 30,
+		speed: 700,
+
 		// direction: "vertical",
 		// loop: true,
 		// pagination: {
