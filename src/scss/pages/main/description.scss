@@ -1,8 +1,8 @@
 @use "../../settings/variables.scss" as *;
 
 .description {
-	padding-top: 80px;
-	padding-bottom: 80px;
+	padding-top: 120px;
+	padding-bottom: 104px;
 	background-color: $gray_color;
 	&__inner {
 	}
@@ -34,6 +34,13 @@
 		@include font(500, 24px, $pink_color);
 		text-decoration: underline;
 		margin-bottom: 12px;
+	}
+}
+
+@media (max-width: 1440px) {
+	.description {
+		padding-top: 80px;
+		padding-bottom: 64px;
 	}
 }
 

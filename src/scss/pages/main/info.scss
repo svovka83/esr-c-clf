@@ -4,8 +4,8 @@
 	display: flex;
 	justify-content: space-between;
 	column-gap: 17px;
-	padding-top: 80px;
-	padding-bottom: 80px;
+	padding-top: 120px;
+	padding-bottom: 120px;
 	&__img {
 		width: 550px;
 		border: 2px solid $secondary_color;
@@ -30,6 +30,8 @@
 
 @media (max-width: 1440px) {
 	.info {
+		padding-top: 80px;
+		padding-bottom: 80px;
 		&__title {
 			@include font(700, 28px, $primary_color);
 		}
