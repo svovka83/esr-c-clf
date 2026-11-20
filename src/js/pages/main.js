@@ -7,10 +7,11 @@ async function initApp() {
 
 		if (page === "main") {
 			const { initGeneral } = await import("../init-general.js");
-			const { initSlider } = await import("../slider.js");
+			const { initSlider, initSliderButtons } = await import("../slider.js");
 
 			await initGeneral();
 			await initSlider();
+			await initSliderButtons();
 		}
 
 		preloader.classList.add("preloader_hide");

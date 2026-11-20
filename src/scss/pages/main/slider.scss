@@ -9,17 +9,47 @@
 		margin-bottom: 48px;
 	}
 	&__content {
+		position: relative;
 	}
 	&__button {
-		width: 100px;
-		padding: 8px;
+		position: absolute;
+		top: calc(50% - 33px);
+		@include font(700, 22px, $secondary_color);
+		width: 64px;
+		height: 64px;
 		border: 2px solid $secondary_color;
 		border-radius: 50%;
 		background-color: $white_color;
+		z-index: 100;
+		cursor: pointer;
+		&_prev {
+			left: 8px;
+		}
+		&_next {
+			right: 8px;
+		}
 	}
 }
 
 .swiper-button-prev,
 .swiper-button-next {
-	@include font(500, 24px, $primary_color);
+	visibility: hidden;
+}
+
+@media (max-width: 1440px) {
+	.slider {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+}
+
+@media (max-width: 768px) {
+	.slider {
+		&__title {
+			@include font(700, 24px, $primary_color);
+		}
+		&__button {
+			display: none;
+		}
+	}
 }

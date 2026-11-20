@@ -1,5 +1,5 @@
 import Swiper from "swiper";
-import { Navigation, Pagination, Scrollbar } from "swiper/modules";
+import { Navigation } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -11,18 +11,24 @@ export async function initSlider() {
 		slidesPerView: 1,
 		spaceBetween: 30,
 		speed: 700,
-
 		loop: true,
 
-		// pagination: {
-		// 	el: ".swiper-pagination",
-		// },
 		navigation: {
 			prevEl: ".swiper-button-prev",
 			nextEl: ".swiper-button-next",
 		},
-		// scrollbar: {
-		// 	el: ".swiper-scrollbar",
-		// },
+	});
+}
+
+export async function initSliderButtons() {
+	const prevBtn = document.querySelector(".slider__button_prev");
+	const nextBtn = document.querySelector(".slider__button_next");
+
+	prevBtn.addEventListener("click", () => {
+		document.querySelector(".swiper-button-prev").click();
+	});
+
+	nextBtn.addEventListener("click", () => {
+		document.querySelector(".swiper-button-next").click();
 	});
 }
