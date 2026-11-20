@@ -33,7 +33,7 @@
 
 @media (max-width: 768px) {
 	.banner {
-		height: calc(100vh - 70px);
+		height: calc(100vh - 82px);
 		&__title {
 			@include font(900, 58px, $secondary_color);
 		}

@@ -3,8 +3,8 @@
 .header {
 	position: sticky;
 	top: 0;
-	padding-top: 16px;
-	padding-bottom: 16px;
+	padding-top: 14px;
+	padding-bottom: 10px;
 	border-bottom: 2px solid $secondary_color;
 	background-color: $white_color;
 	z-index: 1000;
@@ -16,6 +16,22 @@
 }
 
 .logo {
+	display: flex;
+	align-items: center;
+	&__text {
+		display: inline-block;
+		width: 192px;
+		@include font(700, 26px, $primary_color);
+		color: $secondary_color;
+		line-height: 28px;
+		text-transform: uppercase;
+	}
+	&__icon {
+		width: 100px;
+		height: 56px;
+		fill: $secondary_color;
+		stroke: $pink_color;
+	}
 }
 
 .menu {
@@ -25,8 +41,28 @@
 	}
 	&__item {
 		@include font(500, 24px, $primary_color);
+		border-bottom: 2px solid transparent;
+		transition: all 0.2s ease-in;
+		cursor: pointer;
+		&:hover {
+			@include font(500, 24px, $secondary_color);
+			border-bottom: 2px solid $secondary_color;
+		}
 	}
 	&__link {
+	}
+}
+
+@media (max-width: 1024px) {
+	.logo {
+		&__text {
+			width: 152px;
+			@include font(700, 20px, $secondary_color);
+		}
+	}
+
+	.menu {
+		display: none;
 	}
 }
 
