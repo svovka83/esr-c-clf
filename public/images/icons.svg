@@ -7,48 +7,54 @@
         stroke-width="8"
         stroke-linecap="round"
         stroke-linejoin="round">
-        <!-- Upper probe -->
         <path d="M20 125 H320"/>
         <rect x="320" y="95" width="115" height="60" rx="14"/>
         <path d="M435 125 H465"/>
         <rect x="465" y="85" width="30" height="80" rx="15"/>
         <path d="M495 125 H590"/>
         <path d="M590 125 L660 125"/>
-        <!-- Main body -->
         <rect x="350" y="220" width="810" height="290" rx="32"/>
-        <!-- Top buttons -->
         <rect x="535" y="185" width="85" height="35" rx="16"/>
         <rect x="650" y="185" width="85" height="35" rx="16"/>
         <rect x="765" y="185" width="85" height="35" rx="16"/>
         <rect x="880" y="185" width="85" height="35" rx="16"/>
-        <!-- Display frame -->
         <rect x="570" y="265" width="530" height="180" rx="12"/>
         <rect x="595" y="290" width="480" height="130" rx="5"/>
-        <!-- Control panel -->
         <rect x="375" y="290" width="175" height="185" rx="8"/>
-        <!-- Main control button -->
         <circle cx="460" cy="380" r="29"/>
-        <!-- Navigation arrows -->
         <path d="M510 335 L495 355 H525 Z"/>
         <path d="M510 425 L495 405 H525 Z"/>
-        <!-- Upper connector -->
         <rect x="310" y="275" width="40" height="45" rx="8"/>
-        <!-- Lower connector -->
         <rect x="310" y="430" width="40" height="45" rx="8"/>
-        <!-- Lower probe: needle -->
         <path d="M20 375 H155"/>
-        <!-- Lower probe: grip -->
         <rect x="155" y="340" width="120" height="70" rx="16"/>
-        <!-- Lower probe: metal connector -->
         <rect x="275" y="325" width="75" height="100" rx="12"/>
       </g>
     </svg>
-
+  </symbol>
+  <symbol id="repair-icon" viewBox="0 0 300 300">
+    <svg xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 300 300">
+      <g
+        stroke-width="20"
+        stroke-linecap="round"
+        stroke-linejoin="round">
+        <circle cx="73" cy="87" r="27" fill="none"/>
+        <path d="M100 87 H164"/>
+        <path d="M164 59 V115"/>
+        <path d="M164 77 L203 36 L256 64"/>
+        <path d="M164 99 L203 136 L256 107"/>
+        <path d="M82 122 L112 233"/>
+        <path d="M99 114 L160 233"/>
+        <rect x="52" y="233" width="163" height="30"
+              stroke="none"/>
+      </g>
+    </svg>
   </symbol>
 </svg>
 
 <!-- <svg class="class-icon">
-	<use xlink:href="images/sprite.svg#id-icon"></use>
+	<use xlink:href="images/icons.svg#id-icon"></use>
 </svg> -->
 
 <!-- fill="none"

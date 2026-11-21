@@ -10,6 +10,7 @@
 	}
 	&__content {
 		position: relative;
+		overflow: hidden;
 	}
 	&__button {
 		position: absolute;
@@ -22,17 +23,21 @@
 		background-color: $white_color;
 		z-index: 100;
 		cursor: pointer;
-		&_prev {
+		&_prev1,
+		&_prev2 {
 			left: 8px;
 		}
-		&_next {
+		&_next1,
+		&_next2 {
 			right: 8px;
 		}
 	}
 }
 
-.swiper-button-prev,
-.swiper-button-next {
+.swiper-button-prev1,
+.swiper-button-next1,
+.swiper-button-prev2,
+.swiper-button-next2 {
 	visibility: hidden;
 }
 

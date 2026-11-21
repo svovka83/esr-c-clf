@@ -1,0 +1,72 @@
+@use "../../settings/variables.scss" as *;
+
+.tags {
+	padding-top: 120px;
+	padding-bottom: 120px;
+	border-top: 2px solid $secondary_color;
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		column-gap: 12px;
+	}
+}
+
+.tag {
+	width: 300px;
+	text-align: center;
+	&__icon {
+		width: 200px;
+		height: 200px;
+		fill: $pink_color;
+		stroke: $pink_color;
+		margin-bottom: 48px;
+	}
+	&__title {
+		@include font(700, 28px, $primary_color);
+		text-align: center;
+		text-transform: uppercase;
+	}
+}
+
+@media (max-width: 1440px) {
+	.tags {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.tag {
+		width: 300px;
+		&__icon {
+			width: 150px;
+			height: 150px;
+			margin-bottom: 42px;
+		}
+		&__title {
+			@include font(700, 22px, $primary_color);
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.tags {
+		padding-top: 50px;
+		padding-bottom: 50px;
+		overflow-x: auto;
+		scroll-behavior: smooth;
+	}
+
+	.tag {
+		flex: 1 0 200px;
+		&__icon {
+			width: 100px;
+			height: 100px;
+			margin-bottom: 36px;
+		}
+		&__title {
+			@include font(700, 18px, $primary_color);
+		}
+	}
+}
